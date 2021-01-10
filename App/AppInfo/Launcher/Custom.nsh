@@ -8,7 +8,7 @@ ${SegmentPrePrimary}
 	ReadINIStr $0 "$EXEDIR\Data\settings\TelegramPortableSettings.ini" "FirstRun" "Done"
 	${If} $0 != true
 		ClearErrors
-		MessageBox MB_ICONINFORMATION|MB_OK "IMPORTANT ACCOUNT PORTABILITY NOTE!$\r$\n$\r$\nBy default, Telegram will store your local account media on the local machine and leave it behind on exit.  To ensure it is not left behind, after you create/login to your account, click Menu, Settings, Chat Settings, click Default Folder and select 'Temp Folder, cleared on logout...' and then click Save. This will ensure your synced data is not left behind as you move PCs."		
+		MessageBox MB_ICONINFORMATION|MB_OK "IMPORTANT ACCOUNT PORTABILITY NOTE!$\r$\n$\r$\nBy default, Telegram will store your local account media on the local machine and leave it behind on exit.  To ensure it is not left behind, after you create/login to your account, click Menu, Settings, Advanced, click Default Folder and select 'Temp Folder, cleared on logout...' and then click Save. This will ensure your synced data is not left behind as you move PCs."		
 		StrCpy $CustomFirstRunDone true
 	${EndIf}
 !macroend
